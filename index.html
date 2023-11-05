@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="csswebsitedesign.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NICKO DE GUZMAN WEBSITE PORTFOLIO</h1>
+            <nav>
+                <a id="menu-button" href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+                <ul id="nav-links">
+                    <li><a href="website nicko.html">Home</a></li>
+                    <li><a href="aboutme.html">About Student</a></li>
+                    <li><a href="email.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("nav-links");
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
